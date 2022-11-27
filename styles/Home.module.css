@@ -4,7 +4,9 @@
 
 .header {
   text-align: center;
-  background: url("https://i.ibb.co/rpsWqvc/biggradient.jpg");
+  /* background: url("https://i.ibb.co/rpsWqvc/biggradient.jpg"); */
+      /* background: linear-gradient(106.01deg,#e8e3f7 13.61%, teal 38.85%, #ebeaf0 99.61%); */
+      background: linear-gradient(106.01deg,#A1E3D8 13.61%, teal 50.85%, #A1E3D8 99.61%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -15,7 +17,8 @@
 
 .header h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 90px;
+  font-size:90px;
+
 }
 
 .parallax {
@@ -140,6 +143,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 45%;
+  
   color: white;
 }
 
@@ -189,7 +193,7 @@
   height: auto;
   margin-bottom: 5rem;
   text-align: left;
-  background: url("https://i.ibb.co/rpsWqvc/biggradient.jpg");
+  background: linear-gradient(106.01deg, #A1E3D8 13.61%, teal 50.85%, #A1E3D8 99.61%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -242,7 +246,7 @@
 
 .domainImages {
   width: 70%;
-  height: auto;
+  height: 500%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
@@ -270,16 +274,19 @@
 
 /* Thriving community part */
 
+
 .thrivingCommunityHeaderContainer,
 .thrivingCommunityHeaderContainer_light {
   width: 75%;
-  max-width: 600px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
 }
+
 .thrivingCommunityHeader {
-  background: url("https://i.ibb.co/rpsWqvc/biggradient.jpg");
+  /* background: url("https://i.ibb.co/rpsWqvc/biggradient.jpg"); */
+        background: linear-gradient(106.01deg, #A1E3D8 30.61%, teal 30.85%, #A1E3D8 60.61%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -293,6 +300,7 @@
 }
 .thrivingCommunityHeader2 {
   font-size: 98px;
+  margin-left: 200px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: -20px;
 }
@@ -330,57 +338,16 @@
   color: #5a5a5a;
 }
 
-.joinUsButton {
-  display: block;
-  width: 308px;
-  max-width: 90%;
-  height: 70px;
-  left: 566px;
-  top: 418px;
-  background: linear-gradient(106.01deg, #ea739e 38.85%, #9f58f9 91.61%);
-  border-color: #000000;
-  border-radius: 44px;
-  margin: auto;
-}
 
-.joinUsButton_light {
-  display: block;
-  width: 308px;
-  max-width: 90%;
-  height: 70px;
-  left: 566px;
-  top: 418px;
-  background: linear-gradient(106.01deg, #ea739e 38.85%, #9f58f9 91.61%);
-  border-color: white;
-  border-radius: 44px;
-  margin: auto;
-}
 
-.joinUsButton a,
-.joinUsButton_light {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 150%;
-  /* identical to box height, or 60px */
-  text-align: center;
-  /* Neutral / White */
-  color: #ffffff;
-}
 
-.joinUsButton:visited,
-.joinUsButton:hover {
-  border-color: #000000;
-}
-.joinUsButton_light:hover,
-.joinUsButton_light:visited {
-  border-color: white;
-}
+
 .discordImage {
-  width: 90%;
+  width: 91%;
+
   margin: 0 auto 10rem auto;
   display: block;
+  justify-content: center;
 }
 
 /* Informative Cards  */
@@ -461,14 +428,15 @@
 }
 .gradientDiv {
   background: rgb(131, 58, 180);
-  background: linear-gradient(
+  /* background: linear-gradient(
     112deg,
     rgba(131, 58, 180, 1) 0%,
     rgba(50, 62, 167, 1) 24%,
     rgba(191, 44, 105, 1) 50%,
     rgba(253, 29, 29, 1) 77%,
     rgba(252, 176, 69, 1) 93%
-  );
+  ); */
+          background: linear-gradient(106.01deg, #A1E3D8 10.61%, teal 70.85%, #A1E3D8 99.61%);background: linear-gradient(106.01deg, #A1E3D8 13.61%, teal 50.85%, #A1E3D8 99.61%);
   height: 25rem;
   margin: auto;
   margin-bottom: 10rem;
@@ -497,6 +465,7 @@
 }
 .openSourceButton {
   background-color: white;
+  width: 30%;
   border: none;
   padding: 0.5em;
   padding-left: 2em;
@@ -548,7 +517,7 @@
 
   .domainHeader1,
   .domainHeader2 {
-    font-size: 47px;
+    font-size: 37px;
   }
 }
 @media (max-width: 769px) {
@@ -585,6 +554,7 @@
   .domainHeader2 {
     font-size: 50px;
     margin-bottom: -15px;
+            /* background: linear-gradient(106.01deg, #A1E3D8 13.61%, teal 50.85%, #A1E3D8 99.61%); */
   }
 }
 

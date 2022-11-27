@@ -42,8 +42,9 @@ function NavBar(props) {
           <Nav.Item
             className={props.transfer ? styles.logotext_light : styles.logotext}
           >
-            <img width="50" src="./favicon.ico" alt="logo"></img>
-            <h4> SSNCC </h4>
+            <img width="80" src="./codebreakers.jpg" alt="logo"></img>
+            
+            <h4> </h4>
           </Nav.Item>
         </Navbar.Brand>
         <Navbar>
@@ -73,10 +74,10 @@ function NavBar(props) {
               }}
               passHref
             >
-              <Nav.Item className={styles.nav_item}>Meets</Nav.Item>
+              <Nav.Item className={styles.nav_item}>Achievements</Nav.Item>
             </Link>
             <Link href="/projects" passHref>
-              <Nav.Item className={styles.nav_item}>Projects</Nav.Item>
+              {/* <Nav.Item className={styles.nav_item}>Projects</Nav.Item>
             </Link>
             <Link
               href="/blog"
@@ -84,8 +85,8 @@ function NavBar(props) {
                 setExpanded(false);
               }}
               passHref
-            >
-              <Nav.Item className={styles.nav_item}>Blog</Nav.Item>
+            > */}
+              <Nav.Item className={styles.nav_item}>Results</Nav.Item>
             </Link>
 
             <Nav.Item
@@ -145,7 +146,7 @@ function NavBar(props) {
                     }}
                     passHref
                   >
-                    <Nav.Item style={{ cursor: "pointer" }}>Meets</Nav.Item>
+                    <Nav.Item style={{ cursor: "pointer" }}>Achievements</Nav.Item>
                   </Link>
                 </li>
                 <li>
@@ -156,7 +157,7 @@ function NavBar(props) {
                     }}
                     passHref
                   >
-                    <Nav.Item style={{ cursor: "pointer" }}>Projects</Nav.Item>
+                    {/* <Nav.Item style={{ cursor: "pointer" }}>Projects</Nav.Item>
                   </Link>
                 </li>
                 <li>
@@ -166,8 +167,8 @@ function NavBar(props) {
                       setExpanded(false);
                     }}
                     passHref
-                  >
-                    <Nav.Item style={{ cursor: "pointer" }}>Blog</Nav.Item>
+                  > */}
+                    <Nav.Item style={{ cursor: "pointer" }}>Results</Nav.Item>
                   </Link>
                 </li>
               </ul>

@@ -29,7 +29,8 @@
 
 .footerText {
   text-align: center;
-  background: url("../public/biggradient.jpg");
+  /* background: url("../public/biggradient.jpg"); */
+          background: linear-gradient(106.01deg, #A1E3D8 13.61%, teal 50.85%, #A1E3D8 99.61%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

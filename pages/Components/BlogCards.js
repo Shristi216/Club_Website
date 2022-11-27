@@ -13,7 +13,7 @@ const BlogCard = ({
   authorDomain,
   postImage,
   theme,
-  id
+  id,
 }) => {
   const classNamePrefix = "blogcard_item_",
     className = classNamePrefix + id;
@@ -24,26 +24,65 @@ const BlogCard = ({
   return (
     <div className={`${className} ${styles.blogcard_item}`}>
       <div className={styles.blogcard_item_image}>
-        <img src={postImage} alt="BlogTitle" className={styles.blogcard_image} />
+        <img
+          src={postImage}
+          alt="BlogTitle"
+          className={styles.blogcard_image}
+        />
       </div>
       <div className={styles.blogcard_text_container}>
         <div className={styles.post_info}>
-          <div className={theme? styles.post_domain_light:styles.post_domain}>{domain}</div>
-          <div className={theme?styles.info_divider_light:styles.info_divider}></div>
-          <div className={theme?styles.post_date_light:styles.post_date}>{publishDate}</div>
+          <div
+            className={theme ? styles.post_domain_light : styles.post_domain}
+          >
+            {domain}
+          </div>
+          <div
+            className={theme ? styles.info_divider_light : styles.info_divider}
+          ></div>
+          <div className={theme ? styles.post_date_light : styles.post_date}>
+            {publishDate}
+          </div>
         </div>
         {/* hardcoded for gsoc organizations */}
-        <Link href="blog/gsoc-organizations" className={styles.post_card_title_link}>
-          <h2 className={theme? styles.post_card_title_light:styles.post_card_title}>{title}</h2>
+        <Link
+          href="blog/gsoc-organizations"
+          className={styles.post_card_title_link}
+        >
+          <h2
+            className={
+              theme ? styles.post_card_title_light : styles.post_card_title
+            }
+          >
+            {title}
+          </h2>
         </Link>
-        <div className={theme?styles.post_card_summary_light:styles.post_card_summary}>{summary}</div>
+        <div
+          className={
+            theme ? styles.post_card_summary_light : styles.post_card_summary
+          }
+        >
+          {summary}
+        </div>
         <div className={styles.post_card_creator}>
-          <img src={authorPic} alt="Post Creator Name" className={styles.post_creator_image} />
+          <img
+            src={authorPic}
+            alt="Post Creator Name"
+            className={styles.post_creator_image}
+          />
           <div className={styles.post_creator_details}>
             <div className={styles.post_card_creator_name}>
-              <a href="/blog" style={theme?{color:"black"}:{color:"white"}} className={styles.namee}>{authorName}</a>
+              <a
+                href="/blog"
+                style={theme ? { color: "black" } : { color: "white" }}
+                className={styles.namee}
+              >
+                {authorName}
+              </a>
             </div>
-            <div className={styles.post_card_creator_specialization}>{authorDomain}</div>
+            <div className={styles.post_card_creator_specialization}>
+              {authorDomain}
+            </div>
           </div>
         </div>
       </div>
@@ -71,7 +110,7 @@ const BlogCards = (props) => {
             authorPic={card.authorPic}
             authorDomain={card.authorDomain}
             postImage={card.postImage}
-            theme = {props.transfer}
+            theme={props.transfer}
           />
         ))}
     </div>
